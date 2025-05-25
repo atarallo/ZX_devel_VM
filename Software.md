@@ -27,7 +27,6 @@ After initial install, I've added some packages to do basic software development
 + ccache
 + cpanminus
 + doxygen
-+ fuse-emulator-gtk
 + g++
 + gcc
 + gdb
@@ -59,3 +58,7 @@ After initial install, I've added some packages to do basic software development
 + texinfo
 + valgrind
 +zlib1g-dev
+## ZX Spectrum
++ fuse-emulator-gtk
++ libspectrum8
++ libspectrum8-devel
