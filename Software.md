@@ -58,7 +58,9 @@ After initial install, I've added some packages to do basic software development
 + texinfo
 + valgrind
 +zlib1g-dev
+
 ## ZX Spectrum
 + fuse-emulator-gtk
++ fuse-emulator-utils
 + libspectrum8
 + libspectrum8-devel
