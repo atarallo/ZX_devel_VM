@@ -1,4 +1,4 @@
-#Software
+# Software
 After initial install, I've added some packages to do basic software development in C/C++ and building z88dk compiler suite. 
 
 ## Basic utilities 
