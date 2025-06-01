@@ -64,3 +64,7 @@ After initial install, I've added some packages to do basic software development
 + fuse-emulator-utils
 + libspectrum8
 + libspectrum8-devel
+
+apt install libxxf86vm1
+apt install libsdl1.2debian
+
