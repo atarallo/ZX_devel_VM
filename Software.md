@@ -67,4 +67,5 @@ After initial install, I've added some packages to do basic software development
 
 apt install libxxf86vm1
 apt install libsdl1.2debian
+apt install x11-utils
 
