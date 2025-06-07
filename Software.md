@@ -1,5 +1,5 @@
 # Software
-After initial install, I've added some packages to do basic software development in C/C++ and building z88dk compiler suite. 
+After initial install, I've added some packages to do basic software development in C/C++ and building z88dk compiler suite. *Listed below are packages provisioned from Ubuntu repos*
 
 ## Basic utilities 
 + bash-completion
@@ -65,7 +65,8 @@ After initial install, I've added some packages to do basic software development
 + libspectrum8
 + libspectrum8-devel
 
-apt install libxxf86vm1
-apt install libsdl1.2debian
-apt install x11-utils
-
+## X11 
++ libxxf86vm1
++x libsdl1.2debian
++ x11-utils
++ xterm
