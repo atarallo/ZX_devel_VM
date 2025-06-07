@@ -1,0 +1,40 @@
+#
+#
+#
+
+
+alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
+alias egrep='egrep --color=auto'
+alias fgrep='fgrep --color=auto'
+alias grep='grep --color=auto'
+alias l='ls -CF'
+alias la='ls -A'
+alias ll='ls -alF'
+alias ls='ls --color=auto'
+
+#
+#
+#
+export ZCCCFG=/usr/local/share/z88dk/lib/config
+
+#
+#
+# set PATH so it includes user's private bin if it exists
+if [ -d "$HOME/bin" ] ; then
+    PATH="$HOME/bin:$PATH"
+fi
+
+#
+# This is needed to run zesarux on a VM through an ssh connection.
+#
+if [ -x /usr/bin/zesarux ] ; then
+      alias zesarux='zesarux --disableshm'	
+fi 
+
+#
+#
+#
+if [ -x /usr/bin/fuse ] ; then 
+	alias fuse48='fuse --machine 48'
+	alias fuse128='fuse --machine 128'
+fi
