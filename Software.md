@@ -1,5 +1,5 @@
 # Software
-After initial install, I've added some packages to do basic software development in C/C++ and building z88dk compiler suite. *Listed below are packages provisioned from Ubuntu repos*
+After initial install, I've added some packages to do basic software development in C/C++ and building z88dk compiler suite. **Listed below are packages provisioned from Ubuntu repos**
 
 ## Basic utilities 
 + bash-completion
