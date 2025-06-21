@@ -67,7 +67,7 @@ After initial install, I've added some packages to do basic software development
 
 ## X11 
 + libxxf86vm1
-+x libsdl1.2debian
++ libsdl1.2debian
 + x11-utils
 + x11-xserver-utils
 + xterm
