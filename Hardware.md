@@ -6,7 +6,9 @@ A development environment for ZX does not need to be a big iron.
   + /boot/efi *512 MiB*
   + /boot *1 GiB*
   + Logical Volume *22 GiB, leave some unused space* 
-    + / *18 GiB*
+    + / *15 GiB*
+    + /tmp *1 GiB*
+    + /var/tmp *1 GiB*
     + SWAP  *4 GiB*
 + 1 Network Interface
 + OS **Ubuntu Server 24.04 LTS**
