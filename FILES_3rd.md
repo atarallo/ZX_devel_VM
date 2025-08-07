@@ -5,5 +5,5 @@ Files download from various sources, most of them tgz or zip. Not availiable as 
 # Z88DK
 + [Z88 Sources - Nightly CVS Snapshot](http://nightly.z88dk.org/z88dk-latest.tgz)
 # Zesurux
-+ [Zesarux ZX Spectrum Emulator - very comprehensive](https://github.com/chernandezba/zesarux/releases/download/ZEsarUX-12.0/ZEsarUX_src-12.0.tar.gz) This emulator support (among others) Tk90x and Tk95, [Hilow](https://informaticaclasica.uy/hilow-datadrive/) and a veriety of clones from arround the globe. 
++ [Zesarux ZX Spectrum Emulator - very comprehensive](https://github.com/chernandezba/zesarux/releases/download/ZEsarUX-12.0/ZEsarUX_src-12.0.tar.gz) This emulator support (among others) [TK90x](https://en.m.wikipedia.org/wiki/TK90X) and [TK95](https://en.m.wikipedia.org/wiki/TK95), [Hilow](https://informaticaclasica.uy/hilow-datadrive/) and a variety of clones from arround the globe. 
 
