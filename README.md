@@ -5,4 +5,5 @@ The VM is intented to be hosted on the notebook of someone interested in develop
 
 + [Hardware Spec](Hardware.md) and OS for the VM
 + [Software](Software.md) installed on the VM from Ubuntu packages, on standard repos. The choises of software have influences from "21st&nbsp;Century&nbsp;C,&nbsp;2nd Edition" by Ben&nbsp;Klemens. Plus the needed software to compile z88dk 
-+ [3rd party Software](FILES_3rd.md) Software not availiable as ubuntu packages, or not availiable for the version of Ubuntu I'm using. 
++ [3rd party Software](FILES_3rd.md) Software not availiable as ubuntu packages, or not availiable for the version of Ubuntu I'm using. FUSE install provided on Ubuntu does not include ZX Spectrum ROMs (Copyright ISSUES?)
++ [Config Files](Config.md) Global configuration Files I've added or changed. Home directory config added or changed. 
