@@ -1,1 +1,15 @@
 
+*******************************************************************************
+* ZX Spectrum Development environment on a VM                                 *
+*******************************************************************************
+
+Default Users (SSH & Console login):
+
+        * sysadmin / Passw0rd  - sudo enabled user, for system administration
+             tasks.
+
+        * zxdvel / Passw0rd - Development user, should be used for all
+             development work and testing. Might be enabled to shutdown or
+             reboot VM (to be done!!!).
+
+
