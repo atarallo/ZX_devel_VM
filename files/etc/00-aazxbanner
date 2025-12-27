@@ -1,0 +1,41 @@
+#!/bin/sh
+#
+# /etc/update-motd.d/00-aazxbanner
+#
+
+GCC='/usr/bin/gcc'
+GPLUSPLUS='/usr/bin/g++'
+HEAD='/usr/bin/head'
+CUT='/usr/bin/cut'
+TAIL='/usr/bin/tail'
+GREP='/usr/bin/grep'
+GCC_VERSION=$(${GCC} --version |${HEAD} -1|${CUT} -f4 -d' ')
+GPLUSPLUS_VERSION=$(${GPLUSPLUS} --version |${HEAD} -1|${CUT} -f4 -d' ')
+PYTHON_VERSION=$(/usr/bin/python --version)
+PERL_VERSION=$(/usr/bin/perl --version|${HEAD} -2|${TAIL} -1|${CUT} -f2 -d'('|${CUT} -f1 -d')')
+MAKE_VERSION=$(/usr/bin/make -v |${HEAD} -1|${CUT} -f3 -d' ')
+Z88VERSION=$(/usr/local/bin/zcc -specs 2>&1 |${GREP} Frontend|${CUT} -f2 -d'v' )
+
+if [ -x /usr/bin/zesarux ]; then
+	ZESARUX_VERSION=$(/usr/bin/zesarux --version | ${CUT} -f1 -d'-')
+fi
+
+if [ -x /usr/bin/fuse ]; then
+	FUSE_VERSION=$(/usr/bin/fuse  --version | ${CUT} -f8 -d' ')
+fi
+
+printf "*******************************************************************************\n"
+printf "* ZX Spectrum Development environment on a VM                                 *\n"
+printf "*******************************************************************************\n"
+printf "*                                                                             *\n"
+echo "* GCC ${GCC_VERSION}" 
+echo "* G++ ${GPLUSPLUS_VERSION}"
+echo "* ${PYTHON_VERSION}"
+echo "* PERL ${PERL_VERSION}"
+echo "* GNU Make ${MAKE_VERSION}" 
+echo "*"
+echo "* FUSE ${FUSE_VERSION}"
+echo "* ${ZESARUX_VERSION}" 
+echo "* Z88DK ${Z88VERSION}"
+printf "*                                                                             *\n"
+printf "*******************************************************************************\n\n"
