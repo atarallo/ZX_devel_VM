@@ -33,7 +33,7 @@ VM_VIDEO_MEMORY=16                   # Video in MB
 VM_MEMORY=2048                       # RAM in MB, the emulators work fine with 2GB
 VM_DISK_SIZE=30720                   # Disk in MB, 30GB sounds fine.
 VM_DISK_PATH=${VM_DIR}/${MACHINENAME}/${MACHINENAME}_DISK.vdi
-VM_BOOT_DISK_PATH="${HOME}/Downloads/ubuntu-24.04.2-live-server-amd64.iso"
+VM_BOOT_DISK_PATH="${HOME}/Downloads/UBUNTU-INSTALL-ISO.iso"
 
 ##Create VM
 ${VBOXMANAGE} createvm --name ${MACHINENAME} --basefolder="${VM_DIR}" --ostype "Ubuntu_64" --register
