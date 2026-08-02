@@ -4,9 +4,9 @@ After initial install, I've added some packages to do basic software development
 ## Basic utilities 
 + bash-completion
 + curl
++ wget
 + dialog
 + dos2unix
-+ wget
 + vim
 + vim-gtk3
 + screen
