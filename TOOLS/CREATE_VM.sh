@@ -32,7 +32,9 @@ VM_CPUS=2
 VM_VIDEO_MEMORY=16                   # Video in MB
 VM_MEMORY=2048                       # RAM in MB, the emulators work fine with 2GB
 VM_DISK_SIZE=30720                   # Disk in MB, 30GB sounds fine.
+VM_DISK_HOME_SIZE=10240
 VM_DISK_PATH=${VM_DIR}/${MACHINENAME}/${MACHINENAME}_DISK.vdi
+VM_DISK_HOME_PATH=${VM_DIR}/${MACHINENAME}/${MACHINENAME}_HOME_DISK.vdi
 VM_BOOT_DISK_PATH="${HOME}/Downloads/UBUNTU-INSTALL-ISO.iso"
 
 ##Create VM
@@ -46,9 +48,13 @@ ${VBOXMANAGE} modifyvm ${MACHINENAME} --nic1 nat
 ${VBOXMANAGE} createmedium disk --filename="${VM_DISK_PATH}" --size="${VM_DISK_SIZE}" --format VDI  --variant Standard
 ${VBOXMANAGE} storagectl ${MACHINENAME} --name "SATA Controller" --add sata --controller IntelAhci
 ${VBOXMANAGE} storageattach ${MACHINENAME} --storagectl "SATA Controller" --port 0 --device 0 --type hdd --medium="${VM_DISK_PATH}"
+# Create aditional disk, a separated LV for /home
+${VBOXMANAGE} createmedium disk --filename="${VM_DISK_HOME_PATH}" --size="${VM_DISK_HOME_SIZE}" --format VDI  --variant Standard
+${VBOXMANAGE} storageattach ${MACHINENAME} --storagectl "SATA Controller" --port 1 --device 0 --type hdd --medium="${VM_DISK_HOME_PATH}"
 ## Connect to Ubuntu ISO
 ${VBOXMANAGE} storagectl ${MACHINENAME} --name "IDE Controller" --add ide --controller PIIX4
 ${VBOXMANAGE} storageattach ${MACHINENAME} --storagectl "IDE Controller" --port 0 --device 0 --type dvddrive --medium=${VM_BOOT_DISK_PATH}
+# Boot sequence
 ${VBOXMANAGE} modifyvm ${MACHINENAME} --boot1 dvd --boot2 disk --boot3 none --boot4 none
 ##
 ${VBOXMANAGE} setextradata ${MACHINENAME} GUI/ScaleFactor 1.4
