@@ -11,6 +11,7 @@ After initial install, I've added some packages to do basic software development
 + vim-gtk3
 + screen
 + tmux
++ dialog
 
 ## System Administration Tools
 + rsyslog
