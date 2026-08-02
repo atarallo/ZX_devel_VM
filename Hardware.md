@@ -11,6 +11,9 @@ A development environment for ZX does not need to be a big iron.
     + /var/tmp *1 GiB*
     + /var/log *4 GiB*
     + SWAP  *4 GiB*
++ 10 GB Disk
+  + Logical Volume *Thinking ahead, aiming migrations and Upgrades*
+    + /home  *Maybe is sensible not using all availiable space*   
 + 1 Network Interface
 + OS **Ubuntu Server 24.04 LTS**
 
